@@ -1,2 +1,1 @@
-# Algorithmique-et-pseudo-code
 
