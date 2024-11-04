@@ -2,11 +2,12 @@
 
 https://us.informatiweb-pro.net/system-admin/win-server/ws-2012-2012-r2-create-a-dns-server-and-delegate-subdomains.html
 
-~~~~ 1 - Étapes de configuration
+``` 1 - Étapes de configuration
 
 Installer le rôle DNS
+```
 
-Ouvrir le Gestionnaire de serveur
+_**Ouvrir le Gestionnaire de serveur**_
 
 Ajouter des rôles et des fonctionnalités :
 
@@ -17,11 +18,12 @@ Cliquez sur "Suivant" jusqu'à ce que vous arriviez à la section "Sélectionner
 Cochez la case "Serveur DNS".
 Cliquez sur "Ajouter des fonctionnalités" si une fenêtre contextuelle apparaît.
 Cliquez sur "Suivant" et suivez les instructions pour terminer l'installation.
-Configurer le serveur DNS
+Configurer le serveur DNS 
+
 
 Zones de recherche directe :
 
-Ouvrir le Gestionnaire DNS
+_**Ouvrir le Gestionnaire DNS**_
 
 Configurer une nouvelle zone :
 
@@ -37,7 +39,7 @@ Sélectionner "Ne pas autoriser les mises à jour" (ou selon vos besoins) et cli
 Cliquer sur "Terminer" pour créer la zone.
 Zones de recherche inersée :
 
-Configurer une nouvelle zone :
+_**Configurer une nouvelle zone :**_
 Dans le Gestionnaire DNS, faire un clic droit sur "Zones de recherche inversée" et sélectionner "Nouvelle zone...".
 Assistant Nouvelle zone :
 Cliquer sur "Suivant".
@@ -54,7 +56,7 @@ Ajouter des enregistrements de ressource :
 Dans le Gestionnaire DNS, développer "Zones de recherche directe" et sélectionner wilders.lan.
 Faire un clic droit sur wilders.lan et sélectionner "Nouvel hôte (A ou AAAA)...".
 Entrer le nom de l'hôte (par exemple, www) et l'adresse IP correspondante (par exemple 172.20.0.1)
-Reaite l'opération pour votre machine cliente du réseau (par exemple cliwin01.wilders.lan sur 172.20.0.10)
+Refaite l'opération pour votre machine cliente du réseau (par exemple cliwin01.wilders.lan sur 172.20.0.10)
 Cliquer sur "Ajouter un hôte" puis sur "OK".
 Ajouter un enregistrement CNAME :
 
