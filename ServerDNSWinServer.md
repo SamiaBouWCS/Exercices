@@ -77,7 +77,7 @@ Vous devriez voir une réponse indiquant que cliwin01.wilders.lan a l'adresse IP
 
 Vérification sur la machine distante
 
-Le serveur windows 2022 sur lequel nous travaillons est déjà configuré comme serveur DHCP pour qu'il attribue une adresse IP à notre machine distante, pour qu'il lui attribue un DNS :
+Le serveur windows 2019 sur lequel nous travaillons est déjà configuré comme serveur DHCP pour qu'il attribue une adresse IP à notre machine distante, pour qu'il lui attribue un DNS :
 Ouvrir le gestionnaire DHCP
 Dans IPv4, cliquer droit sur "Options de serveur" et sélectionner "Configurer les options ..."
 Sélectionner 006 Serveur DNS
