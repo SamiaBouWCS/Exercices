@@ -51,7 +51,7 @@ Sélectionner "Ne pas autoriser les mises à jour" (ou selon vos besoins) et cli
 Cliquer sur "Terminer" pour créer la zone.
 Configurer les enregistrements DNS
 
-Ajouter des enregistrements de ressource :
+_**Ajouter des enregistrements de ressource :**_
 
 Dans le Gestionnaire DNS, développer "Zones de recherche directe" et sélectionner wilders.lan.
 Faire un clic droit sur wilders.lan et sélectionner "Nouvel hôte (A ou AAAA)...".
@@ -72,12 +72,12 @@ Vous devriez voir une réponse indiquant que www.wilders.lan a l'adresse IP 172.
 Ouvrir powershell et entrer nslookup dns.wilders.lan
 Vous devriez voir une réponse indiquant que dns.wilders.lan a l'adresse IP 172.20.0.1 avec l'alias dns.wilders.lan
 
-Ouvrir powershell et entrer nslookup cliwin01.wilders.lan
-Vous devriez voir une réponse indiquant que cliwin01.wilders.lan a l'adresse IP 172.20.0.10
+Ouvrir powershell et entrer nslookup dns.wilders.lan
+Vous devriez voir une réponse indiquant que dns.wilders.lan a l'adresse IP 172.20.0.10
 
-Vérification sur la machine distante
+_**Vérification sur la machine distante**_
 
-Le serveur windows 2019 sur lequel nous travaillons est déjà configuré comme serveur DHCP pour qu'il attribue une adresse IP à notre machine distante, pour qu'il lui attribue un DNS :
+```Le serveur windows 2019 sur lequel nous travaillons est déjà configuré comme serveur DHCP pour qu'il attribue une adresse IP à notre machine distante, pour qu'il lui attribue un DNS :
 Ouvrir le gestionnaire DHCP
 Dans IPv4, cliquer droit sur "Options de serveur" et sélectionner "Configurer les options ..."
 Sélectionner 006 Serveur DNS
@@ -85,3 +85,4 @@ Dans "Nom du serveur", entrer dns.wilders.lans et cliquer sur "Résoudre" ce qui
 Cliquez sur "Ok" et vérifier et démarrer machine distante
 Si tout fonctionne correctement, la machine distante aura son IP et DNS attribué automatiquement
 Faire les tests nslookup de la partie 4.
+```
