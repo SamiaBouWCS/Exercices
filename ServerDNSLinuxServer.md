@@ -1,4 +1,4 @@
-### =>> Installer Bind9
+# =>> Installer Bind9
 Dans le terminal de votre VM Ubuntu ou Debian, saisir la commande : **sudo apt install -y bind9 bind9utils bind9-doc dnsutils**
 
 _**Configurer le serveur DNS**_
