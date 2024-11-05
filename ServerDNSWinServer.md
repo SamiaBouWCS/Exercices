@@ -20,7 +20,6 @@ Cliquez sur "Ajouter des fonctionnalités" si une fenêtre contextuelle apparaî
 Cliquez sur "Suivant" et suivez les instructions pour terminer l'installation.
 Configurer le serveur DNS 
 
-
 Zones de recherche directe :
 
 _**Ouvrir le Gestionnaire DNS**_
@@ -66,14 +65,14 @@ Dans le champ "Nom de domaine complet (FQDN) du nom de domaine cible", cliquer s
 Cliquer sur "OK" pour créer l'enregistrement CNAME.
 Vérification des enregistrements
 
-Ouvrir powershell et entrer nslookup www.wilders.lan
-Vous devriez voir une réponse indiquant que www.wilders.lan a l'adresse IP 172.20.0.1
+Ouvrir powershell et entrer **nslookup www.wilders.lan**
+Vous devriez voir une réponse indiquant que **www.wilders.lan a l'adresse IP 172.20.0.1**
 
-Ouvrir powershell et entrer nslookup dns.wilders.lan
-Vous devriez voir une réponse indiquant que dns.wilders.lan a l'adresse IP 172.20.0.1 avec l'alias dns.wilders.lan
+Ouvrir powershell et entrer **nslookup dns.wilders.lan**
+Vous devriez voir une réponse indiquant que **dns.wilders.lan a l'adresse IP 172.20.0.1 avec l'alias dns.wilders.lan**
 
-Ouvrir powershell et entrer nslookup dns.wilders.lan
-Vous devriez voir une réponse indiquant que dns.wilders.lan a l'adresse IP 172.20.0.10
+Ouvrir powershell et entrer nslookup **dns.wilders.lan**
+Vous devriez voir une réponse indiquant que **dns.wilders.lan a l'adresse IP 172.20.0.10**
 
 _**Vérification sur la machine distante**_
 
@@ -86,3 +85,26 @@ Cliquez sur "Ok" et vérifier et démarrer machine distante
 Si tout fonctionne correctement, la machine distante aura son IP et DNS attribué automatiquement
 Faire les tests nslookup de la partie 4.
 ```
+
+_**Test de la configuration**_ 
+
+**=>> Sur le serveur DNS**
+```
+Via la fenêtre PowerShell, tester l'enregistrement A du serveur  avec un _nslookup srv.wilders.lan_
+Vérifiez que l'adresse IP retournée est correcte.
+
+Puis tester l'enregistrement A de la machine fixe : avec un _nslookup machine-fixe.wilders.lan_
+Tester l'enregistrement CNAME : nslookup dns.wilders.lan
+Vérifiez que l’enregistrement CNAME retourne srv.wilders.lan.
+
+Tester l'enregistrement PTR pour le serveur : nslookup 10.0.2.15
+Tester l'enregistrement PTR pour la machine fixe :nslookup 10.0.2.11
+```
+
+**=>> Sur la machine cliente**
+````Ouvrir une fenêtre PowerShell.
+Tester l'enregistrement A du serveur : nslookup srv.wilders.lan
+Tester l'enregistrement A de la machine fixe : nslookup machine-fixe.wilders.lan
+Tester l'enregistrement CNAME : nslookup dns.wilders.lan
+Tester l'enregistrement PTR pour le serveur : nslookup 10.0.2.15
+Tester l'enregistrement PTR pour la machine fixe : nslookup 10.0.2.11
