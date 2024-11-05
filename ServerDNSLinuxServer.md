@@ -44,7 +44,7 @@ primary IN A 172.20.0.254
 ;CNAME Record
 dns IN CNAME primary.wilders.lan.
 ````
-Faire pareil avec la plage reverse dns: sudo cp db.127 reverse.wilders.lan
+**Faire pareil avec la plage reverse dns: sudo cp db.127 reverse.wilders.lan**
 Editer le fichier créé:
 TTL 86400
 @ IN SOA wilders.lan. root.wilders.lan. (
@@ -66,7 +66,8 @@ sudo systemctl start named
 sudo systemctl enable named
 sudo systemctl status named
 Test
-Sur une autre machine:
+
+_**=>> Sur une autre machine:**_
 Modifier le DNS en modifiant le fichier /etc/resol.conf en y ajoutant:
 search wilders.lan
 nameserver 172.20.0.254
