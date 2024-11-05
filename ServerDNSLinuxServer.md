@@ -1,4 +1,4 @@
-### Installer Bind9
+### =>> Installer Bind9
 Dans le terminal de votre VM Ubuntu ou Debian, saisir la commande : **sudo apt install -y bind9 bind9utils bind9-doc dnsutils**
 
 _**Configurer le serveur DNS**_
@@ -27,7 +27,8 @@ file "/etc/bind/reverse.wilders.lan";
 allow-update { none; };
 };
 
-Aller dans le dossier **/etc/bind** et faire une copie du fichier exemple de base de donnée: sudo cp db.local forward.wilders.lan
+```
+=>> Aller dans le dossier **/etc/bind** et faire une copie du fichier exemple de base de donnée: sudo cp db.local forward.wilders.lan
 Editer le fichier nouvellement créé:
 ```TTL 604800
 @ IN SOA primary.wilders.lan. root.primary.wilders.lan. (
@@ -43,9 +44,10 @@ primary IN A 172.20.0.254
 
 ;CNAME Record
 dns IN CNAME primary.wilders.lan.
+
 ````
 **Faire pareil avec la plage reverse dns: sudo cp db.127 reverse.wilders.lan**
-Editer le fichier créé:
+1-Editer le fichier créé:
 TTL 86400
 @ IN SOA wilders.lan. root.wilders.lan. (
 2022072752 ;Serial
@@ -67,8 +69,8 @@ sudo systemctl enable named
 sudo systemctl status named
 Test
 
-```_**=>> Sur une autre machine:**_
-Modifier le DNS en modifiant le fichier /etc/resol.conf en y ajoutant:
+_**=>> Sur une autre machine:**_
+2-Modifier le DNS en modifiant le fichier /etc/resol.conf en y ajoutant:
 search wilders.lan
 nameserver 172.20.0.254
 Taper dans le CLI pour tester le DNS:
