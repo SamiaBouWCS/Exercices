@@ -67,7 +67,7 @@ sudo systemctl enable named
 sudo systemctl status named
 Test
 
-_**=>> Sur une autre machine:**_
+```_**=>> Sur une autre machine:**_
 Modifier le DNS en modifiant le fichier /etc/resol.conf en y ajoutant:
 search wilders.lan
 nameserver 172.20.0.254
