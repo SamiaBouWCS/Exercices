@@ -1,8 +1,7 @@
 ## Configuration des machines en ligne de commande dynamique : 
- **- M10 (10.0.0.10/24 et fd6a:47d5:647d::10/64)**
- 
-````
-sudo ip addr add 10.0.0.10/24 dev eth0
+ **- M10 (10.0.0.10/24 et fd6a:47d5:647d::10/64)** 
+
+```sudo ip addr add 10.0.0.10/24 dev eth0
 sudo ip addr add fd6a:47d5:647d::10/64 dev eth0
 sudo ip route add default via 10.0.0.1
 sudo ip -6 route add default via fd6a:47d5:647d::1
@@ -26,7 +25,7 @@ sudo ip route add default via 10.0.2.1
 sudo ip -6 route add default via fdde:7426:af03::1
  **- R0 (10.0.0.1/24 et 192.168.0.250/24, fd6a:47d5:647d::1/64 et fd6a:47d5:647d::250/64)**
 
-sudo ip addr add 10.0.0.1/24 dev eth0
+````sudo ip addr add 10.0.0.1/24 dev eth0
 sudo ip addr add fd6a:47d5:647d::1/64 dev eth0
 sudo ip addr add 192.168.0.250/24 dev eth1
 sudo ip addr add fd6a:47d5:647d::250/64 dev eth1
@@ -34,7 +33,7 @@ sudo ip route add 10.0.1.0/24 via 192.168.0.251
 sudo ip route add 10.0.2.0/24 via 192.168.0.252
 sudo ip -6 route add fd20:7336:af69::/64 via fd6a:47d5:647d::251
 sudo ip -6 route add fdde:7426:af03::/64 via fd6a:47d5:647d::252
- **- R1 (10.0.1.1/24 et 192.168.0.251/24, fd20:7336:af69::1/64 et fd6a:47d5:647d::251/64)**
+ _**- R1 (10.0.1.1/24 et 192.168.0.251/24, fd20:7336:af69::1/64 et fd6a:47d5:647d::251/64)**_ 
 
 sudo ip addr add 10.0.1.1/24 dev eth0
 sudo ip addr add fd20:7336:af69::1/64 dev eth0
@@ -55,7 +54,7 @@ sudo ip route add 10.0.1.0/24 via 192.168.0.251
 sudo ip -6 route add fd6a:47d5:647d::/64 via fd6a:47d5:647d::250
 sudo ip -6 route add fd20:7336:af69::/64 via fd6a:47d5:647d::251
 
-## Configuration des machines en fichier statique
+** Configuration des machines en fichier statique ** 
 /etc/network/interfaces
 M10 (10.0.0.10/24 et fd6a:47d5:647d::10/64)
 
@@ -187,3 +186,4 @@ up ip route add 10.0.1.0/24 via 192.168.0.251
 ### Ajouter des routes statiques IPv6
 up ip -6 route add fd6a:47d5:647d::/64 via fd6a:47d5:647d::250
 up ip -6 route add fd20:7336:af69::/64 via fd6a:47d5:647d::251
+
