@@ -2,7 +2,7 @@
 Dans le terminal de votre VM Ubuntu ou Debian, saisir la commande : **sudo apt install -y bind9 bind9utils bind9-doc dnsutils**
 
 ## _**Configurer le serveur DNS**_
-Editer le fichier /etc/bind/named.conf.options (avec l'éditeur de votre choix) et y insérer:
+```Editer le fichier /etc/bind/named.conf.options (avec l'éditeur de votre choix) et y insérer:
 acl internal-network {
 172.20.0.0/24;
 };
