@@ -69,7 +69,7 @@ sudo systemctl status named
 Test
 
 ##### _**=>> Sur une autre machine :**_
-2-Modifier le DNS en modifiant le fichier /etc/resol.conf en y ajoutant:
+```Modifier le DNS en modifiant le fichier /etc/resol.conf en y ajoutant:
 search wilders.lan
 nameserver 172.20.0.254
 Taper dans le CLI pour tester le DNS:
