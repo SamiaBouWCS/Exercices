@@ -1,5 +1,7 @@
-**phpinfo()**
-PHP Version => 8.3.9
+
+_**phpinfo()**_
+
+_**PHP Version => 8.3.9**_
 
 ````
 System => Linux d2805ed7d79c 5.15.153.1-microsoft-standard-WSL2 #1 SMP Fri Mar 29 23:14:13 UTC 2024 x86_64
@@ -29,9 +31,10 @@ Zend Max Execution Timers => disabled
 IPv6 Support => enabled
 DTrace Support => disabled
 
+```
 Registered PHP Streams => https, ftps, compress.zlib, php, file, glob, data, http, ftp, phar
 Registered Stream Socket Transports => tcp, udp, unix, udg, ssl, tls, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3
 Registered Stream Filters => zlib., convert.iconv., string.rot13, string.toupper, string.tolower, convert.*, consumed, dechunk
-
-This program makes use of the Zend Scripting Language Engine:
-Zend Engine v4.3.9, Copyright (c) Zend Technologies
+````
+_**This program makes use of the Zend Scripting Language Engine:
+Zend Engine v4.3.9, Copyright (c) Zend Technologies**_
