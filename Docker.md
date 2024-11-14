@@ -14,6 +14,7 @@ Loaded Configuration File => (none)
 Scan this dir for additional .ini files => /usr/local/etc/php/conf.d
 Additional .ini files parsed => /usr/local/etc/php/conf.d/docker-php-ext-sodium.ini
 
+````
 PHP API => 20230831
 PHP Extension => 20230831
 Zend Extension => 420230831
