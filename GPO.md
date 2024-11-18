@@ -11,4 +11,4 @@ Je me déconnecte de mon utilisateur admin et me connecte à un utilisateur qui 
 Je teste d'ouvrir le panneau de configuration
 
 
-GPOStudenPanneaudeConf.png
+![Texte alternatif](GPOStudenPanneaudeConf.png)
