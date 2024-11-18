@@ -1,6 +1,6 @@
 # Critères d'acceptation
-- Tapez group policy management dans la barre de recherche windows
-- Sélectionnez la foret wilders.lan puis le groupe d'utilsiateurs wilders_students
+- Tapez **gpmc.msc** dans la fenêtre Exécuter comme sur la capture d'écran ci-dessous.
+- Sélectionnez la foret wilders.lan puis le groupe d'utilisiateurs wilders_students
 - Clic droit et selectionnez la 1ère option
 - Nommez la GPO "wilders" et validez
 - Selectionnez la gpo et faites clic droit "éditer"
