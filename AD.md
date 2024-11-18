@@ -26,6 +26,8 @@ Type de groupe : Security (pour gérer les permissions de sécurité)
 Cliquez sur OK.
 Le groupe Students est maintenant créé dans l'OU Wilders_students.
 
+![Texte alternatif](creer-unite-organisation-active-directory.jpg)
+
 3. Créer un Utilisateur et l'Ajouter au Groupe Students
 Maintenant, nous allons créer un utilisateur (par exemple, jean.dupont) et l'ajouter au groupe Students.
 
