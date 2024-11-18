@@ -9,3 +9,6 @@ Configuration Utilisateur -> Paramètres Windows -> Tempaltes Administratifs -> 
 Clic gauche puis clic droit "editer" et activez le paramètre
 Je me déconnecte de mon utilisateur admin et me connecte à un utilisateur qui fait partie du groupe wilders_students
 Je teste d'ouvrir le panneau de configuration
+
+
+GPOStudenPanneaudeConf.png
